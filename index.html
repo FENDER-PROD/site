@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA DE IMC</title>
+
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <!--    ENCABEZADO -->
+    <header class="header">
+        <h1 class="header-title">Calcula tu Índice de Masa Corporal (IMC)</h1>
+        <p class="header-description">
+            Tu IMC puede ser medida inicial util para identificar tu clasificacion de peso y tus factores 
+            de riesgo de Obesidad.
+        </p>
+    </header>
+
+     <!-- SECCION DE CAJAS   -->
+    <section class="figures">
+        <div class="box">
+            <div class="box-header">
+                <h2>Datos Personal</h2>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text"></p>
+                <input 
+                    class="box-main__input" 
+                    type="number" 
+                    name="side" 
+                    id="inputSide1"
+                    placeholder="Ingrese Altura"
+                >
+                <input 
+                    class="box-main__input" 
+                    type="number" 
+                    name="side" 
+                    id="inputSide2"
+                    placeholder="Ingrese Peso"
+                >
+                <button class="box-main__btn" type="button" onclick="myModule.CIMC()">Calcular</button>
+            </div>
+        </div>
+
+    </section>
+    <!-- RESPUESTA  -->
+     <section class="RPT">
+        <div class="RESPUESTA1">
+            <h1>TU IMC ES:</h1>
+            <p id="result1"></p><!--para dar respuesta del imc-->
+        </div>    
+        <div class="RESPUESTA2">
+            <h2>Clasificacion de peso:</h2>
+            <p id="result2"></p><!--clasificacion de peso-->      
+        </div>
+        <div class="RESPUESTA3">
+            <h3>Riesgo de enfermedad relacionada:</h3>
+            <p id="result3"></p><!--riesgo de enfermedad realacionada-->
+        </div>
+     </section>
+   <footer>
+        <p>© 2025 Fender-Prod Development Company, L.F.</p>
+    </footer>
+    <script src="main-min.js"></script>
+</body>
+</html>
